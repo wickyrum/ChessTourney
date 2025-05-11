@@ -16,3 +16,6 @@ jobs:
           python-version: '3.x'
       - name: Run event creator
         run: python init_tourney.py
+        env:
+          API_TOKEN: ${{ secrets.API_TOKEN }}
+          TEAM_ID: ${{ secrets.TEAM_ID }}

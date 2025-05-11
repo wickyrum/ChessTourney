@@ -1,8 +1,10 @@
 import requests
 import config
+import os
 from datetime import datetime, timedelta
 
-
+API_TOKEN = os.environ.get("API_TOKEN")
+TEAM_ID = os.environ.get("TEAM_ID")
 url = f"https://lichess.org/api/swiss/new/{config.TEAM_ID}"
 headers = {
     "Authorization": f"Bearer {config.API_TOKEN}",
