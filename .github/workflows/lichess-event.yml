@@ -2,20 +2,23 @@ name: Weekly Lichess Event Creator
 
 on:
   schedule:
-    - cron: '35 17 * * 0'  # Sunday at 17:35 UTC
-  workflow_dispatch:  # allows manual trigger
+    - cron: '42 17 * * 0'  # Sunday at 10:20 UTC
+  workflow_dispatch:
 
 jobs:
   run-script:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
-      - name: Install dependencies
+
+      - name: Install requests
         run: pip install requests
+
       - name: Run event creator
         run: python init_tourney.py
         env:
