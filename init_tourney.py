@@ -1,10 +1,11 @@
 import requests
+import config
 from datetime import datetime, timedelta
 
 
-url = f"https://lichess.org/api/swiss/new/{TEAM_ID}"
+url = f"https://lichess.org/api/swiss/new/{config.TEAM_ID}"
 headers = {
-    "Authorization": f"Bearer {API_TOKEN}",
+    "Authorization": f"Bearer {config.API_TOKEN}",
     "Content-Type": "application/x-www-form-urlencoded"
 }
 
