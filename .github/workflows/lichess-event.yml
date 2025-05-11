@@ -2,7 +2,7 @@ name: Weekly Lichess Event Creator
 
 on:
   schedule:
-    - cron: '0 10 * * 0'  # Sunday at 10:00 UTC
+    - cron: '15 10 * * 0'  # Sunday at 10:00 UTC
   workflow_dispatch:  # allows manual trigger
 
 jobs:
