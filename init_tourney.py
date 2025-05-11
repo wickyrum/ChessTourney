@@ -1,9 +1,6 @@
 import requests
 from datetime import datetime, timedelta
 
-API_TOKEN = "lip_cWLgTmRaIlRgrfzluL7x"
-TEAM_ID = "ckm-chess-club"  
-
 
 url = f"https://lichess.org/api/swiss/new/{TEAM_ID}"
 headers = {
