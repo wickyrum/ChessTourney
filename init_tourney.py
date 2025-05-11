@@ -4,9 +4,9 @@ from datetime import datetime, timedelta
 
 API_TOKEN = os.environ.get("API_TOKEN")
 TEAM_ID = os.environ.get("TEAM_ID")
-url = f"https://lichess.org/api/swiss/new/{config.TEAM_ID}"
+url = f"https://lichess.org/api/swiss/new/{TEAM_ID}"
 headers = {
-    "Authorization": f"Bearer {config.API_TOKEN}",
+    "Authorization": f"Bearer {API_TOKEN}",
     "Content-Type": "application/x-www-form-urlencoded"
 }
 
